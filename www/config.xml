@@ -5,17 +5,17 @@
         versionCode="10"
         version   = "1.0.0">
 
-        <name>PhoneGap ChildBrowser Plugin Example</name>
+        <name>Virtuoso Life</name>
 
         <description>
-            A starter project for the ChildBrowser plugin
+            Magazine reader for Virtuoso Life
         </description>
 
-        <author href="https://blog.digitalbackcountry.com" email="ryan@adobe.com">
-            Ryan Stewart
+        <author href="http://www.technosigner.com" email="richard@joffray.com">
+            Richard Joffray
         </author>
         
-        <preference name="phonegap-version" value="1.5.0" />
+        <preference name="phonegap-version" value="3.5.0" />
 
         <!-- if a single icon is specified then Build will use it for all platforms -->
         <icon src="icons/icon.png" />
