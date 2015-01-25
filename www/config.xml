@@ -50,8 +50,10 @@
         <gap:splash src="splashes/ipad-landscape.png" width="1024" height="748"/> -->
 
         <!-- to enable individual plugins use the following example -->
-        <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />
-
+        <!-- <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" /> -->
+        <feature name="InAppBrowser">
+            <param name="ios-package" value="CDVInAppBrowser" />
+        </feature>
 
         <!-- This is the whitelist. For ChildBrowser to work correctly you need to enable domains here -->
         <access origin="*"/>
