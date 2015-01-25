@@ -1,63 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns = "http://www.w3.org/ns/widgets"
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.technosigner.VirtuosoLife"
-        versionCode="10"
+        id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-        <name>Virtuoso Life</name>
+    <name>InAppBrowser App</name>
 
-        <description>
-            Magazine reader for Virtuoso Life
-        </description>
+    <description>
+        InAppBrowser example app.
+    </description>
 
-        <author href="http://www.technosigner.com" email="richard@joffray.com">
-            Richard Joffray
-        </author>
-        
-        <preference name="phonegap-version" value="3.6.3" />
-        <preference name="webviewbounce" value="false"/>
-        <preference name="stay-in-webview" value="true"/>
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        PhoneGap Team
+    </author>
 
-        <preference name="target-device" value="handset"/>
+    <preference name="phonegap-version" value="3.0.0" /> 
 
-        <!-- if a single icon is specified then Build will use it for all platforms -->
-        <!-- <icon src="icons/icon.png" /> -->
-        
-        <!-- the default attribute can also be used -->
-        <!-- <icon src="icons/icon.png" default="true" /> -->
-
-        <!-- specifies the icon to be displayed when hovered over (on BlackBerry) -->
-        <!-- <icon src="icons/icon-hover.png" hover="true" /> -->
-
-        <!-- iOS requires specific dimensions for icons; classic iPhone screens, Retina displays, and iPad screens respectively -->
-<!--         <icon src="icons/icon-iphone-57.png" width="57" height="57"/>
-        <icon src="icons/icon-iphone-72.png" width="72" height="72"/>
-        <icon src="icons/icon-iphone-114.png" width="114" height="114"/>
-
-        Android requires specific dimensions; ldpi, mdpi, and hdpi respectively
-        <icon src="icons/icon-android-36.png" width="36" height="36"/>
-        <icon src="icons/icon-android-48.png" width="48" height="48"/>
-        <icon src="icons/icon-android-72.png" width="72" height="72"/> -->
-    
-        <!-- if a single splash screen is specified it will be used for all platforms. Multiple splash screens are recommended for iOS -->
-        <!-- <gap:splash src="splashes/splash.png" /> -->
-
-        <!-- iOS requires specific dimensions for different devices; classic iPhone screens, Retina displays, and iPad screens -->
-<!--         <gap:splash src="splashes/splash.png"/>
-        <gap:splash src="splashes/retina.png" width="640" height="960"/>
-        <gap:splash src="splashes/ipad-portrait.png" width="768" height="1004"/>
-        <gap:splash src="splashes/ipad-landscape.png" width="1024" height="748"/> -->
-
-        <!-- to enable individual plugins use the following example -->
-        <!-- <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" /> -->
-        <feature name="InAppBrowser">
-            <param name="ios-package" value="CDVInAppBrowser" />
-        </feature>
-
-        <!-- This is the whitelist. For ChildBrowser to work correctly you need to enable domains here -->
-        <access origin="*"/>
-       <!--  <access origin="google.com" subdomains="true" />
-        <access origin="phonegap.com" subdomains="true" />  -->      
-
-    </widget>
+    <gap:plugin name="org.apache.cordova.core.inappbrowser" />
+</widget>
