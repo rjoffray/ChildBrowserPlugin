@@ -16,9 +16,11 @@
 
     function onDeviceReady() {
       navigator.notification.alert("Cordova is working");
+      alert("Cordova is working")
     }
 
     function onLinkClick() {
+
         window.plugins.childBrowser.onLocationChange = function(loc){ alert("In index.html new loc = " + loc); };
         window.plugins.childBrowser.onClose = function(){alert("In index.html child browser closed");};
         window.plugins.childBrowser.onOpenExternal = function(){alert("In index.html onOpenExternal");};        
@@ -28,11 +30,12 @@
         console.log(window.plugins.childBrowser);
         
     }
+    
     </script>
   </head>
   <body onload="onBodyLoad()">
     <h1>Welcome to the ChildBrowser demo</h1>
-    <p><a href="#" onclick="onLinkClick()">Click here</a> to open a child browser window to Google</p>
+    <p><a href="javascript:void(0)" onclick="onLinkClick()">Click here</a> to open a child browser window to Google</p>
 
   </body>
 </html>
