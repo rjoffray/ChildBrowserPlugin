@@ -34,7 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
+alert("ready");
         var ref = window.open('http://apache.org', '_blank', 'location=yes');
 
         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
