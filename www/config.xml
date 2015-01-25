@@ -15,10 +15,10 @@
             Richard Joffray
         </author>
         
-        <preference name="phonegap-version" value="3.5.0" />
+        <preference name="phonegap-version" value="3.6.3" />
         <preference name="webviewbounce" value="false"/>
         <preference name="stay-in-webview" value="true"/>
-        
+
         <preference name="target-device" value="handset"/>
 
         <!-- if a single icon is specified then Build will use it for all platforms -->
